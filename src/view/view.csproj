@@ -7,4 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="MurallaMedievalMinecraft.jpg" />
+    <None Remove="Sin título-1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MurallaMedievalMinecraft.jpg" />
+    <Resource Include="Sin título-1.png" />
+  </ItemGroup>
+
 </Project>

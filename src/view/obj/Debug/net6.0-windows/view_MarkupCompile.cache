@@ -1,5 +1,5 @@
 ﻿view
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\App.xaml
 11407045341
 
-5-867665670
+3-1233169557
 194-97651837
 MainWindow.xaml;
 
-True
+False
 
