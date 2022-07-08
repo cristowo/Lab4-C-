@@ -102,12 +102,19 @@ public class Card{
         }else{
             return false;
         }}
-    /**
-     * convierte carta a String
-     * * @return carta String
-     */
-        public override String ToString(){
-        return carta + "";
+        /**
+         * convierte carta a String
+         * * @return carta String
+         */
+        public override String ToString()
+        {
+            String salida = "";
+            for (int i = 0; i < carta.Count(); i++)
+            {
+                salida += carta[i] + " ";
+            }
+            return salida;
+
         }
     }
 }

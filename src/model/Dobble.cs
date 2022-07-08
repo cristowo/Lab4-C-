@@ -297,7 +297,13 @@ namespace model
          */
         public override String ToString()
         {
-            return mazo + "";
+            String salida = "";
+            for (int i = 0; i < mazo.Count(); i++)
+            {
+                salida += mazo[i] + " ";
+            }
+            return salida;
+
         }
     }
 }

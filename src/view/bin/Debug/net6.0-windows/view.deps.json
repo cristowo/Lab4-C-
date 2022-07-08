@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "view/1.0.0": {
+        "dependencies": {
+          "model": "1.0.0"
+        },
         "runtime": {
           "view.dll": {}
+        }
+      },
+      "model/1.0.0": {
+        "runtime": {
+          "model.dll": {}
         }
       }
     }
   },
   "libraries": {
     "view/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

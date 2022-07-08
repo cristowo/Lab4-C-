@@ -18,7 +18,7 @@ public class DobbleGame
     public DobbleGame(int NumPlayers, int TamCardSet, string modo)
     {
         ListPlayers = new List<Player>();
-        mazoDobblegame = new Dobble((TamCardSet), -1, true);
+        mazoDobblegame = new Dobble((TamCardSet), -1, false);
         modalidad = modo;
         estado = "Preparacion";
         numPlayers = NumPlayers;
@@ -355,13 +355,8 @@ public class DobbleGame
      */
         public override string ToString()
     {
-        return "DobbleGame{" +
-                "estado='" + estado + '\'' +
-                ", mazoDobblegame=" + mazoDobblegame +
-                ", numPlayers=" + numPlayers +
-                ", modalidad='" + modalidad + '\'' +
-                ", ListPlayers=" + ListPlayers +
-                '}';
+        return 
+                ", mazoDobblegame=" + mazoDobblegame.ToString();
     }
     }
 }

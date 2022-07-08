@@ -24,5 +24,24 @@ namespace view
         {
             InitializeComponent();
         }
+        //-------------------parte inicial--------------------------------------------
+        private void Iniciar_Juego_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new Window1();
+            window.Show();
+            //this.Close();
+        }
+
+        private void Config_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Salir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        //----------------------------------------------------------------------------
     }
 }

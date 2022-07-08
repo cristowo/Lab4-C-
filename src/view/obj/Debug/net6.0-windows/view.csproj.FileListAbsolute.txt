@@ -19,3 +19,10 @@ C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\n
 C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\view.pdb
 C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\view.genruntimeconfig.cache
 C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\ref\view.dll
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\Window1.g.cs
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\Window1.baml
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\Register.g.cs
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\Register.baml
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\bin\Debug\net6.0-windows\model.dll
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\bin\Debug\net6.0-windows\model.pdb
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\view\obj\Debug\net6.0-windows\view.csproj.CopyComplete

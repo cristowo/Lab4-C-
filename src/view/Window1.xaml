@@ -1,0 +1,25 @@
+﻿<Window x:Class="view.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:view"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="431*"/>
+        </Grid.RowDefinitions>
+        <Image Margin="0,-25,-145,-25" Source="/Sin título-1 copia.png" Grid.RowSpan="2" Opacity="0.9"/>
+        <Label x:Name="Titulo" Content="DOBBLE GAME" HorizontalAlignment="Center" Margin="0,52,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Segoe UI Black" Height="61" Width="322" FontSize="36" Foreground="White" Background="#FF0A0A0A"/>
+        <TextBox x:Name="NumE" HorizontalAlignment="Left" Margin="191,218,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="20" Text="&#xD;&#xA;" Height="30" TextChanged="NumE_TextChanged"/>
+        <Label Content="Ingrese el Numero de elementos" HorizontalAlignment="Left" Margin="72,170,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Background="Black" Foreground="White"/>
+        <Label Content="(Solo números que genere un set valido)" HorizontalAlignment="Left" Margin="109,267,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+        <TextBox x:Name="NumP" HorizontalAlignment="Left" Margin="568,218,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="20" TextChanged="NumP_TextChanged"/>
+        <Label x:Name="Ingrese_la_cantidad_de_jugadores" Content="Ingrese la cantidad de jugadores" HorizontalAlignment="Left" Margin="449,170,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Foreground="White" Background="Black"/>
+        <Button x:Name="Continuar1" Content="Continuar -&gt;" HorizontalAlignment="Left" Margin="656,378,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF14B1BD" Foreground="White" FontSize="20" Click="Continuar1_Click"/>
+
+
+    </Grid>
+</Window>

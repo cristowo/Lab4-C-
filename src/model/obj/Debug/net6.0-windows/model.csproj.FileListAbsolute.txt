@@ -1,0 +1,12 @@
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\bin\Debug\net6.0-windows\model.deps.json
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\bin\Debug\net6.0-windows\model.dll
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\bin\Debug\net6.0-windows\model.pdb
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\model.csproj.AssemblyReference.cache
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\model.AssemblyInfoInputs.cache
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\model.AssemblyInfo.cs
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\model.csproj.CoreCompileInputs.cache
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\model.dll
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\refint\model.dll
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\model.pdb
+C:\Users\cri\Documents\git proyectos\Lab4_20814010_Marchant\src\model\obj\Debug\net6.0-windows\ref\model.dll
