@@ -42,7 +42,7 @@ namespace view
             DobbleGame tablero = new DobbleGame(numP,numE,"Stack");
             Window window = new Register(tablero);
             window.Show();
-            //this.Close();
+            this.Close();
         }
     }
 }

@@ -249,12 +249,8 @@ namespace model
          */
         public void EliminarCard()
         {
-            List<Card> mazoaux = new List<Card>();
-            for (int i = 2; i < mazo.Count(); i++)
-            {
-                mazoaux.Add(mazo[i]);
-            }
-            this.mazo = mazoaux;
+            this.mazo.RemoveAt(0);
+            this.mazo.RemoveAt(0);
         }
 
         /**

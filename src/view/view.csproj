@@ -8,9 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="MurallaMedievalMinecraft.jpg" />
+    <None Remove="card.png" />
     <None Remove="Sin título-1 copia.png" />
-    <None Remove="Sin título-1.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,9 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="MurallaMedievalMinecraft.jpg" />
+    <Resource Include="card.png" />
     <Resource Include="Sin título-1 copia.png" />
-    <Resource Include="Sin título-1.png" />
   </ItemGroup>
 
 </Project>

@@ -38,18 +38,24 @@ public class Card{
     public int TamCard(){
         return carta.Count();
     }
-
+    
     /**
      * Obtiene una lista con los numeros en comun entre 2 cartas
      * @return ArrayList<Integer> lista de enteros
      */
     public List<int> EleComun(Card carta2){
-        Card cartaAux = new Card();
-        Card cartaAux2 = new Card();
-        cartaAux2.setCarta(carta);
-        cartaAux2.CopyCard(cartaAux);
-        cartaAux.getCarta().Intersect(carta2.getCarta());
-        return cartaAux.getCarta();
+            Card aux = new Card();
+            for (int i = 0; i < carta2.getCarta().Count(); i++)
+            {
+                for (int j = 0; j < this.carta.Count(); j++)
+                {
+                    if(carta2.getCarta()[i] == this.carta[j])
+                    {
+                        aux.addECarta(carta2.getCarta()[i]);
+                    }
+                }
+            }
+        return aux.getCarta();
     }
 
     /**

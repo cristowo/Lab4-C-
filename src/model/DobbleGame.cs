@@ -66,7 +66,7 @@ public class DobbleGame
      */
     public int getNumPlayers()
     {
-        return numPlayers;
+        return Convert.ToInt32(numPlayers);
     }
 
     /**
@@ -118,7 +118,7 @@ public class DobbleGame
      * Registra a un usuario, en donde si esta repetido no se agrega
      * @ param String nombre
      */
-    public void registUser(string nombre)
+    public int registUser(string nombre)
     {
         if (0 < numPlayers)
         {
@@ -137,8 +137,11 @@ public class DobbleGame
                 Player jugador = new Player(nombre);
                 ListPlayers.Add(jugador);
                 numPlayers = numPlayers - 1;
+                return 1;//registrado
             }
+            return 2;//repitido
         }
+        return 3;//ya no se puede registrar mas
     }
 
     /**
@@ -216,18 +219,6 @@ public class DobbleGame
         // Caso para jugadores en Stack Mode
         if (modalidad.Equals("Stack"))
         {
-            //Saltar turno
-            if (elem == 0)
-            {
-                ListPlayers[posicion].setTurno(ListPlayers[posicion].getTurno() + 1);
-            }
-            // Terminar juego
-            else if (elem < 0)
-            {
-                setEstado("Finalizado");
-            }
-            else
-            {
                 // Respuesta correcta
                 if (elem.Equals(mazo.getMazo()[0].EleComun(mazo.getMazo()[1])[0]))
                 {
@@ -236,32 +227,6 @@ public class DobbleGame
                 }
                 // Respuesta incorrecta
                 ListPlayers[posicion].setTurno(ListPlayers[posicion].getTurno() + 1);
-            }
-        }
-        // Modalidad Player vs CPU
-        else if (modalidad.Equals("VSCPU"))
-        {
-            // Saltar turno
-            if (elem == 0)
-            {
-                ListPlayers[posicion].setTurno(ListPlayers[posicion].getTurno() + 1);
-            }
-            // Finalizar juego
-            else if (elem < 0)
-            {
-                setEstado("Finalizado");
-            }
-            else
-            {
-                // Respuesta correcta
-                if (elem.Equals(mazo.getMazo()[0].EleComun(mazo.getMazo()[1])[0]))
-                {
-                    ListPlayers[posicion].setPuntos(ListPlayers[posicion].getPuntos() + 1);
-                    mazoDobblegame.EliminarCard();
-                }
-                // Respuesta incorrecta
-                ListPlayers[posicion].setTurno(ListPlayers[posicion].getTurno() + 1);
-            }
         }
     }
 

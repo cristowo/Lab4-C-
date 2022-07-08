@@ -13,5 +13,10 @@
         </Grid.RowDefinitions>
         <Image Margin="0,-25,-145,-25" Source="/Sin título-1 copia.png" Grid.RowSpan="2" Opacity="0.9"/>
         <Label x:Name="Titulo" Content="DOBBLE GAME" HorizontalAlignment="Center" Margin="0,52,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Segoe UI Black" Height="61" Width="322" FontSize="36" Foreground="White" Background="#FF0A0A0A"/>
+        <TextBox x:Name="newP" HorizontalAlignment="Left" Margin="261,236,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="20" Height="32"/>
+        <Label x:Name="registertxt" Content="Ingrese el nombre del jugador" HorizontalAlignment="Center" Margin="0,177,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Black" Foreground="White" FontSize="20"/>
+        <Label x:Name="prest" Content="Jugadores restantes:" HorizontalAlignment="Left" Margin="27,324,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Black" Foreground="White" FontSize="20"/>
+        <TextBox x:Name="nprest" HorizontalAlignment="Left" Margin="217,324,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Foreground="White" Background="Black" FontSize="20" Height="37" Visibility="Visible" IsEnabled="False"/>
+        <Button x:Name="confirmReg" Content="Registrar" HorizontalAlignment="Left" Margin="447,236,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF41DCD8" Foreground="White" FontSize="20" Height="32" Width="92" Click="confirmReg_Click"/>
     </Grid>
 </Window>

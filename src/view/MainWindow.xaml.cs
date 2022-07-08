@@ -29,7 +29,7 @@ namespace view
         {
             Window window = new Window1();
             window.Show();
-            //this.Close();
+            this.Close();
         }
 
         private void Config_Click(object sender, RoutedEventArgs e)
