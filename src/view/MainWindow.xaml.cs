@@ -24,6 +24,10 @@ namespace view
         {
             InitializeComponent();
         }
+        private void MainWindow_Load(object sender, RoutedEventArgs e)
+        {
+
+        }
         //-------------------parte inicial--------------------------------------------
         private void Iniciar_Juego_Click(object sender, RoutedEventArgs e)
         {

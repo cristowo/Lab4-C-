@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:view"
         mc:Ignorable="d"
-        Title="Dobble Game" Height="450" Width="800">
+        Title="Dobble Game" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="431*"/>
         </Grid.RowDefinitions>
-        <Image Margin="0,-25,-145,-25" Source="/Sin título-1 copia.png" Grid.RowSpan="2" Opacity="0.9"/>
-        <Label x:Name="Titulo" Content="DOBBLE GAME" HorizontalAlignment="Center" Margin="0,52,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Segoe UI Black" Height="61" Width="322" FontSize="36" Foreground="White" Background="#FF0A0A0A"/>
-        <Button x:Name="Iniciar_Juego" Content="Iniciar Juego" HorizontalAlignment="Center" Margin="0,216,0,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF43E2E6" FontSize="20" Width="162" FontFamily="Segoe UI Black" Click="Iniciar_Juego_Click"/>
-        <Button x:Name="Config" Content="Configuración" HorizontalAlignment="Center" Margin="0,285,0,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FFC5C5C5" FontSize="20" Width="162" FontFamily="Segoe UI Black" Click="Config_Click"/>
-        <Button x:Name="Salir" Content="Salir &gt;:c" HorizontalAlignment="Center" Margin="0,351,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Background="#FFEC4141" Width="162" FontFamily="Segoe UI Black" Foreground="Black" BorderBrush="Black" Click="Salir_Click"/>
+        <Image Margin="-80,-41,-80,-41" Source="images/back.jpg" Grid.RowSpan="2" Opacity="0.9"/>
+        <Image HorizontalAlignment="Center" Height="66" Margin="0,255,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Source="/Images/BoCont.png"/>
+        <Image HorizontalAlignment="Center" Height="68" Margin="0,321,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Source="/Images/BoChao.png"/>
+        <Button x:Name="Iniciar_Juego" Content="Iniciar" HorizontalAlignment="Center" Margin="0,264,0,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="20" Width="138" FontFamily="OCR A Extended" Click="Iniciar_Juego_Click" Height="38" Foreground="White"/>
+        <Button x:Name="Salir" Content="Salir" HorizontalAlignment="Center" Margin="0,329,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Background="{x:Null}" Width="138" FontFamily="OCR A Extended" Foreground="White" BorderBrush="{x:Null}" Click="Salir_Click" FontWeight="Normal" Height="36"/>
+        <Image HorizontalAlignment="Center" Height="78" Margin="0,47,0,0" Grid.Row="1" VerticalAlignment="Top" Width="398" Source="images/titulo.png"/>
 
 
     </Grid>

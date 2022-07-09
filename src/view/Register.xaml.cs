@@ -30,40 +30,55 @@ namespace view
 
         private void confirmReg_Click(object sender, RoutedEventArgs e)
         {
-            string newname = newP.Text;
-            if (tablero.registUser(newname) == 1)
+            try
             {
-                if (0 == tablero.getNumPlayers())
+                string newname = newP.Text;
+                if (String.IsNullOrEmpty(newname) == false)
                 {
-                    MessageBox.Show("Este modo consiste en que debe ingresar el elemento en común entre 2 cartas para poder ganas puntos mientras compites contra el otro jugador.", "REGLAS");
-                    Window window = new gameTablero(tablero);
-                    window.Show();
-                    this.Close();
+                    if (tablero.registUser(newname) == 1)
+                    {
+                        if (0 == tablero.getNumPlayers())
+                        {
+                            MessageBox.Show("Este modo consiste en que debe ingresar el elemento en común entre 2 cartas para poder ganas puntos mientras compites contra el otro jugador.", "REGLAS");
+                            Window window = new gameTablero(tablero);
+                            window.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            Window window = new Register(tablero);
+                            window.Show();
+                            this.Close();
+                        }
+                    }
+                    else if (tablero.registUser(newname) == 2)
+                    {
+                        if (0 == tablero.getNumPlayers())
+                        {
+                            MessageBox.Show("Este modo consiste en que debe ingresar el elemento en común entre 2 cartas para poder ganas puntos mientras compites contra el otro jugador.", "REGLAS");
+                            Window window = new gameTablero(tablero);
+                            window.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Jugador ya registrado!!!");
+                            Window window = new Register(tablero);
+                            window.Show();
+                            this.Close();
+                        }
+                    }
                 }
                 else
                 {
-                    Window window = new Register(tablero);
-                    window.Show();
-                    this.Close();
+                    MessageBox.Show("EL NOMBRE DEL JUGADOR NO PUEDE ESTAR VACIO!!!");
                 }
             }
-            else if(tablero.registUser(newname) == 2)
+            catch(Exception)
             {
-                if (0 == tablero.getNumPlayers())
-                {
-                    MessageBox.Show("Este modo consiste en que debe ingresar el elemento en común entre 2 cartas para poder ganas puntos mientras compites contra el otro jugador.", "REGLAS");
-                    Window window = new gameTablero(tablero);
-                    window.Show();
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Jugador ya registrado!!!");
-                    Window window = new Register(tablero);
-                    window.Show();
-                    this.Close();
-                }
+                MessageBox.Show("Recuerde solo ingresar datos validos");
             }
+
         }
     }
 }

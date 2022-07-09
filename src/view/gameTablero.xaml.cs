@@ -35,22 +35,58 @@ namespace view
 
         private void spotit_Click(object sender, RoutedEventArgs e)
         {
-            int num;
-            num = int.Parse(element.Text);
+            try
+            {
+                int num;
+                num = int.Parse(element.Text);
+                if(num >= 1)
+                {
+                    string name;
+                    name = tablero.whoseTurnIs().ToString();
+                    tablero.play(num, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
+
+                    if (2 < tablero.getMazoDobblegame().getMazo().Count())
+                    {
+                        Window window = new gameTablero(tablero);
+                        window.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        tablero.setEstado("Finalizado");
+                        Window window = new resultado(tablero);
+                        window.Show();
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Intente jugar con los números que estan en la mesa");
+                }
+            
+            }
+            catch
+            {
+                MessageBox.Show("Por favor solo ingresar números");
+            }
+        }
+
+        private void pass_Click(object sender, RoutedEventArgs e)
+        {
             string name;
             name = tablero.whoseTurnIs().ToString();
-            tablero.play(num, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
+            tablero.play(0, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
+            Window window = new gameTablero(tablero);
+            window.Show();
+            this.Close();
+        }
 
-            if (2 < tablero.getMazoDobblegame().getMazo().Count())
-            {
-                Window window = new gameTablero(tablero);
-                window.Show();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("CHAOOOOOOOOOOOOOO");
-            }
+        private void Finish_Click(object sender, RoutedEventArgs e)
+        {
+            tablero.setEstado("Finalizado");
+            Window window = new resultado(tablero);
+            window.Show();
+            this.Close();
         }
     }
 }

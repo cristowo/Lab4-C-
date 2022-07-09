@@ -8,8 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="card.png" />
-    <None Remove="Sin título-1 copia.png" />
+    <None Remove="abajo.png" />
+    <None Remove="BoChao.png" />
+    <None Remove="BoCont.png" />
+    <None Remove="c1.png" />
+    <None Remove="c2.png" />
+    <None Remove="DaIngre.png" />
+    <None Remove="final.png" />
+    <None Remove="Images\abajo.png" />
+    <None Remove="Pantilla pokemon copia.png" />
+    <None Remove="turnpoint.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,8 +25,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="card.png" />
-    <Resource Include="Sin título-1 copia.png" />
+    <Resource Include="Images\final.png" />
+    <Resource Include="Images\BoChao.png" />
+    <Resource Include="Images\BoCont.png" />
+    <Resource Include="Images\c1.png" />
+    <Resource Include="Images\c2.png" />
+    <Resource Include="Images\DaIngre.png" />
+    <Resource Include="Images\abajo.png" />
+    <Resource Include="Images\titulo.png" />
+    <Resource Include="Images\back.jpg" />
+    <Resource Include="Images\Pantilla pokemon copia.png" />
+    <Resource Include="Images\turnpoint.png" />
   </ItemGroup>
 
 </Project>

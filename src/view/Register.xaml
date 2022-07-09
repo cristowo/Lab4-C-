@@ -5,18 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:view"
         mc:Ignorable="d"
-        Title="Register" Height="450" Width="800">
+        Title="Register" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="431*"/>
         </Grid.RowDefinitions>
-        <Image Margin="0,-25,-145,-25" Source="/Sin título-1 copia.png" Grid.RowSpan="2" Opacity="0.9"/>
-        <Label x:Name="Titulo" Content="DOBBLE GAME" HorizontalAlignment="Center" Margin="0,52,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Segoe UI Black" Height="61" Width="322" FontSize="36" Foreground="White" Background="#FF0A0A0A"/>
-        <TextBox x:Name="newP" HorizontalAlignment="Left" Margin="261,236,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="20" Height="32"/>
-        <Label x:Name="registertxt" Content="Ingrese el nombre del jugador" HorizontalAlignment="Center" Margin="0,177,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Black" Foreground="White" FontSize="20"/>
-        <Label x:Name="prest" Content="Jugadores restantes:" HorizontalAlignment="Left" Margin="27,324,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Black" Foreground="White" FontSize="20"/>
-        <TextBox x:Name="nprest" HorizontalAlignment="Left" Margin="217,324,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Foreground="White" Background="Black" FontSize="20" Height="37" Visibility="Visible" IsEnabled="False"/>
-        <Button x:Name="confirmReg" Content="Registrar" HorizontalAlignment="Left" Margin="447,236,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF41DCD8" Foreground="White" FontSize="20" Height="32" Width="92" Click="confirmReg_Click"/>
+        <Image HorizontalAlignment="Left" Height="48" Margin="261,227,0,0" Grid.Row="1" VerticalAlignment="Top" Width="186" Source="/Images/Pantilla pokemon copia.png"/>
+        <Image HorizontalAlignment="Left" Height="41" Margin="447,228,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" Source="/Images/BoCont.png"/>
+        <Image HorizontalAlignment="Left" Height="61" Margin="29,326,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Source="Images/DaIngre.png"/>
+        <Image HorizontalAlignment="Left" Height="61" Margin="272,162,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Source="Images/DaIngre.png"/>
+        <Image HorizontalAlignment="Center" Height="61" Margin="0,53,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Source="Images/titulo.png"/>
+        <TextBox x:Name="newP" HorizontalAlignment="Left" Margin="272,237,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" FontSize="20" Height="25" Background="{x:Null}" FontFamily="OCR A Extended" BorderBrush="{x:Null}"/>
+        <Label x:Name="registertxt" Content="Ingrese el nombre &#xD;&#xA;del jugador" HorizontalAlignment="Center" Margin="0,173,0,0" Grid.Row="1" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontSize="14" FontFamily="OCR A Extended" HorizontalContentAlignment="Center" Width="179"/>
+        <Label x:Name="prest" Content="Jugadores restantes:" HorizontalAlignment="Left" Margin="42,342,0,0" Grid.Row="1" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontSize="16" FontFamily="OCR A Extended"/>
+        <TextBox x:Name="nprest" HorizontalAlignment="Left" Margin="238,347,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" Foreground="Black" Background="{x:Null}" FontSize="16" Height="25" Visibility="Visible" FontFamily="OCR A Extended" BorderBrush="{x:Null}"/>
+        <Button x:Name="confirmReg" Content="Registrar" HorizontalAlignment="Left" Margin="448,232,0,0" Grid.Row="1" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="18" Height="32" Width="112" Click="confirmReg_Click" BorderBrush="{x:Null}" FontFamily="OCR A Extended"/>
     </Grid>
 </Window>

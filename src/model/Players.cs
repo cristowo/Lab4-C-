@@ -79,14 +79,13 @@ namespace model
      * Comprueba si un jugador (Player) es igual a otro
      * @return Boolean
      */
-    /*
     public override bool Equals(Object o)
     {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || GetType() != o.GetType()) return false;
         Player player = (Player)o;
-        return Objects.equals(name, player.name) && Objects.equals(turno, player.turno) && Objects.equals(puntos, player.puntos);
-    }*/
+        return Object.Equals(name, player.name) && Object.Equals(turno, player.turno) && Object.Equals(puntos, player.puntos);
+    }
 
     /**
      * Convierte el contendio de Player a String

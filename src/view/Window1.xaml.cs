@@ -35,14 +35,29 @@ namespace view
 
         private void Continuar1_Click(object sender, RoutedEventArgs e)
         {
-            int numE;
-            numE = int.Parse(NumE.Text);
-            int numP;
-            numP = int.Parse(NumP.Text);
-            DobbleGame tablero = new DobbleGame(numP,numE,"Stack");
-            Window window = new Register(tablero);
-            window.Show();
-            this.Close();
+            try
+            {
+                int numE;
+                numE = int.Parse(NumE.Text);
+                int numP;
+                numP = int.Parse(NumP.Text);
+                Dobble aux = new Dobble(numE, -1, false);
+                if(numP > 1 && aux.isDobble())
+                {
+                    DobbleGame tablero = new DobbleGame(numP, numE, "Stack");
+                    Window window = new Register(tablero);
+                    window.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Recuerde que solo se admiten mazos validos y un minimo de 2 jugadores");
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Formato incorrecto, por favor solo usar números");
+            }
         }
     }
 }

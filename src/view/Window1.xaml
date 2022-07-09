@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:view"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="431*"/>
-        </Grid.RowDefinitions>
-        <Image Margin="0,-25,-145,-25" Source="/Sin título-1 copia.png" Grid.RowSpan="2" Opacity="0.9"/>
-        <Label x:Name="Titulo" Content="DOBBLE GAME" HorizontalAlignment="Center" Margin="0,52,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Segoe UI Black" Height="61" Width="322" FontSize="36" Foreground="White" Background="#FF0A0A0A"/>
-        <TextBox x:Name="NumE" HorizontalAlignment="Left" Margin="191,218,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="20" Text="&#xD;&#xA;" Height="30" TextChanged="NumE_TextChanged"/>
-        <Label Content="Ingrese el Numero de elementos" HorizontalAlignment="Left" Margin="72,170,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Background="Black" Foreground="White"/>
-        <Label Content="(Solo números que genere un set valido)" HorizontalAlignment="Left" Margin="109,267,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Black" Foreground="White"/>
-        <TextBox x:Name="NumP" HorizontalAlignment="Left" Margin="568,218,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="20" TextChanged="NumP_TextChanged"/>
-        <Label x:Name="Ingrese_la_cantidad_de_jugadores" Content="Ingrese la cantidad de jugadores" HorizontalAlignment="Left" Margin="449,170,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Foreground="White" Background="Black"/>
-        <Button x:Name="Continuar1" Content="Continuar -&gt;" HorizontalAlignment="Left" Margin="656,378,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF14B1BD" Foreground="White" FontSize="20" Click="Continuar1_Click"/>
+        <Image HorizontalAlignment="Left" Height="48" Margin="122,228,0,0" VerticalAlignment="Top" Width="186" Source="/Images/Pantilla pokemon copia.png"/>
+        <Image HorizontalAlignment="Left" Height="48" Margin="505,228,0,0" VerticalAlignment="Top" Width="186" Source="/Images/Pantilla pokemon copia.png"/>
+        <Image HorizontalAlignment="Left" Height="41" Margin="645,339,0,0" VerticalAlignment="Top" Width="118" Source="/Images/BoCont.png"/>
+        <Image HorizontalAlignment="Left" Height="83" Margin="431,144,0,0" VerticalAlignment="Top" Width="334" Source="Images/DaIngre.png"/>
+        <Image HorizontalAlignment="Left" Height="83" Margin="56,142,0,0" VerticalAlignment="Top" Width="360" Source="Images/DaIngre.png"/>
+        <Image HorizontalAlignment="Center" Height="61" Margin="0,53,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Source="Images/titulo.png"/>
+        <TextBox x:Name="NumE" HorizontalAlignment="Left" Margin="134,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="20" Height="30" TextChanged="NumE_TextChanged" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="OCR A Extended"/>
+        <Label Content="Ingrese el Número de elementos" HorizontalAlignment="Left" Margin="75,159,0,0" VerticalAlignment="Top" FontSize="16" Background="{x:Null}" Foreground="Black" FontFamily="OCR A Extended"/>
+        <Label Content="(Solo números que genere un set valido)" HorizontalAlignment="Left" Margin="82,183,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontFamily="OCR A Extended"/>
+        <TextBox x:Name="NumP" HorizontalAlignment="Left" Margin="511,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="20" TextChanged="NumP_TextChanged" Background="{x:Null}" FontFamily="OCR A Extended" Height="30" TextAlignment="Center"/>
+        <Label x:Name="Ingrese_la_cantidad_de_jugadores" Content="Ingrese la cantidad&#xD;&#xA;de jugadores" HorizontalAlignment="Left" Margin="458,163,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Black" Background="{x:Null}" FontFamily="OCR A Extended" Width="296" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Button x:Name="Continuar1" Content="Continuar" HorizontalAlignment="Left" Margin="652,347,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="18" Click="Continuar1_Click" BorderBrush="{x:Null}" FontFamily="OCR A Extended"/>
 
 
     </Grid>

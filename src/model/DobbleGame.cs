@@ -219,21 +219,21 @@ public class DobbleGame
         // Caso para jugadores en Stack Mode
         if (modalidad.Equals("Stack"))
         {
-                // Respuesta correcta
+            if (elem > 0)
+            {
                 if (elem.Equals(mazo.getMazo()[0].EleComun(mazo.getMazo()[1])[0]))
                 {
                     ListPlayers[posicion].setPuntos(ListPlayers[posicion].getPuntos() + 1);
                     mazoDobblegame.EliminarCard();
                 }
-                // Respuesta incorrecta
-                ListPlayers[posicion].setTurno(ListPlayers[posicion].getTurno() + 1);
+            }
+            ListPlayers[posicion].setTurno(ListPlayers[posicion].getTurno() + 1);
         }
     }
-
     /**
      * Muestra el resutalado de un juego finalizado
      */
-    public void resultado()
+    public string resultado()
     {
         List<string> puestos = new List<string>();
         int mayor = 0;
@@ -253,53 +253,46 @@ public class DobbleGame
         // Caso de empate
         if (1 < puestos.Count())
         {
-            string result = new string(puestos.ToString().Replace("[", ""));
-            result = result.Replace("]", "");
-                /*
-            System.out.println("Ganadores: " + result);
-            System.out.println("Con puntaje de: " + getScoreForName(puestos.get(0)) + " puntos.");*/
-             //ver como mostrar ganadores (return string)
-        }
+                //caso empate
+            string result = new string(String.Join(", ", puestos.ToArray()));
+                return "Empate entre: " + result + "\n\r" + "Con puntaje de: " + getScoreForName(puestos[0]) + " puntos.";
+            }
         // Caso de victoria
         else
         {
-                /*
-            System.out.println("Ganador: " + puestos.get(0));
-            System.out.println("Con puntaje de: " + getScoreForName(puestos.get(0)) + " puntos.");*/
-        }
+                return "Ganador: " + puestos[0] + "\n\r" + "Con puntaje de: " + getScoreForName(puestos[0]) + " puntos.";
+            }
     }
 
     /**
      * Obtiene un True si dos games son iguales, contrario a esto obtiene un false
      * @return Boolean
      */
-    /*
-    @Override
-        public boolean equals(Object o)
+        public override bool Equals(Object o)
     {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || GetType() != o.GetType()) return false;
         DobbleGame that = (DobbleGame)o;
-        if (Objects.equals(estado, that.estado) && mazoDobblegame.equals(mazoDobblegame) && Objects.equals(numPlayers, that.numPlayers) && Objects.equals(modalidad, that.modalidad))
+        if (Object.Equals(estado, that.estado) && mazoDobblegame.Equals(mazoDobblegame) && Object.Equals(numPlayers, that.numPlayers) && Object.Equals(modalidad, that.modalidad))
         {
-            if (ListPlayers.size() != that.ListPlayers.size())
+            if (ListPlayers.Count() != that.ListPlayers.Count())
             {
                 return false;
             }
             else
             {
                 int aux = 0;
-                for (int i = 0; i < ListPlayers.size(); i++)
+                for (int i = 0; i < ListPlayers.Count(); i++)
                 {
-                    for (int j = 0; j < that.ListPlayers.size(); j++)
+                    for (int j = 0; j < that.ListPlayers.Count(); j++)
                     {
-                        if (ListPlayers.get(i).equals(ListPlayers.get(j)))
+                        if (ListPlayers[i].Equals(ListPlayers[j]))
                         {
                             aux++;
                         }
                     }
                 }
-                if (aux == ListPlayers.size())
+                if (aux == ListPlayers.Count())
                 {
                     return true;
                 }
@@ -313,7 +306,7 @@ public class DobbleGame
         {
             return false;
         }
-    }*/
+    }
     /**
      * Convierte el contendio de DobbleGame a String
      * @return estado, mazoDobblegame, numPlayers, modalidad, ListPlayers como String
