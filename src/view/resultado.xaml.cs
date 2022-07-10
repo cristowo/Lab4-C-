@@ -35,7 +35,7 @@ namespace view
 
         private void yes_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new Window1();
+            Window window = new MainWindow();
             window.Show();
             this.Close();
         }

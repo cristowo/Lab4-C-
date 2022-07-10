@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Image HorizontalAlignment="Center" Height="518" VerticalAlignment="Center" Width="876" Source="/Images/backgrounall.png"/>
         <Image HorizontalAlignment="Left" Height="48" Margin="122,228,0,0" VerticalAlignment="Top" Width="186" Source="/Images/Pantilla pokemon copia.png"/>
         <Image HorizontalAlignment="Left" Height="48" Margin="505,228,0,0" VerticalAlignment="Top" Width="186" Source="/Images/Pantilla pokemon copia.png"/>
         <Image HorizontalAlignment="Left" Height="41" Margin="645,339,0,0" VerticalAlignment="Top" Width="118" Source="/Images/BoCont.png"/>
@@ -16,9 +17,11 @@
         <TextBox x:Name="NumE" HorizontalAlignment="Left" Margin="134,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="20" Height="30" TextChanged="NumE_TextChanged" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="OCR A Extended"/>
         <Label Content="Ingrese el Número de elementos" HorizontalAlignment="Left" Margin="75,159,0,0" VerticalAlignment="Top" FontSize="16" Background="{x:Null}" Foreground="Black" FontFamily="OCR A Extended"/>
         <Label Content="(Solo números que genere un set valido)" HorizontalAlignment="Left" Margin="82,183,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="Black" FontFamily="OCR A Extended"/>
-        <TextBox x:Name="NumP" HorizontalAlignment="Left" Margin="511,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="20" TextChanged="NumP_TextChanged" Background="{x:Null}" FontFamily="OCR A Extended" Height="30" TextAlignment="Center"/>
+        <TextBox x:Name="NumP" HorizontalAlignment="Left" Margin="511,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="20" TextChanged="NumP_TextChanged" Background="{x:Null}" FontFamily="OCR A Extended" Height="30" TextAlignment="Center" BorderBrush="{x:Null}"/>
         <Label x:Name="Ingrese_la_cantidad_de_jugadores" Content="Ingrese la cantidad&#xD;&#xA;de jugadores" HorizontalAlignment="Left" Margin="458,163,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Black" Background="{x:Null}" FontFamily="OCR A Extended" Width="296" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
         <Button x:Name="Continuar1" Content="Continuar" HorizontalAlignment="Left" Margin="652,347,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="18" Click="Continuar1_Click" BorderBrush="{x:Null}" FontFamily="OCR A Extended"/>
+        <Image HorizontalAlignment="Left" Height="41" Margin="56,339,0,0" VerticalAlignment="Top" Width="118" Source="/Images/BoChao.png"/>
+        <Button x:Name="back" Content="Volver" HorizontalAlignment="Left" Margin="63,345,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="OCR A Extended" Height="28" Width="105" Click="back_Click"/>
 
 
     </Grid>

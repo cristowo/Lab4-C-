@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace model
 {
-public class DobbleGame
-{
+public class DobbleGame:Interface_DobbleGame
+    {
     private string estado;
     private Dobble mazoDobblegame;
     private int numPlayers;
@@ -18,7 +18,7 @@ public class DobbleGame
     public DobbleGame(int NumPlayers, int TamCardSet, string modo)
     {
         ListPlayers = new List<Player>();
-        mazoDobblegame = new Dobble((TamCardSet), -1, false);
+        mazoDobblegame = new Dobble((TamCardSet), -1, true);
         modalidad = modo;
         estado = "Preparacion";
         numPlayers = NumPlayers;
@@ -217,7 +217,7 @@ public class DobbleGame
     public void play(int elem, Dobble mazo, int posicion)
     {
         // Caso para jugadores en Stack Mode
-        if (modalidad.Equals("Stack"))
+        if (modalidad.Equals("Stack") || modalidad.Equals("CPU"))
         {
             if (elem > 0)
             {
@@ -229,6 +229,7 @@ public class DobbleGame
             }
             ListPlayers[posicion].setTurno(ListPlayers[posicion].getTurno() + 1);
         }
+
     }
     /**
      * Muestra el resutalado de un juego finalizado
@@ -313,8 +314,13 @@ public class DobbleGame
      */
         public override string ToString()
     {
-        return 
-                ", mazoDobblegame=" + mazoDobblegame.ToString();
-    }
+        return "DobbleGame{" +
+                "estado='" + estado.ToString() + '\'' +
+                ", mazoDobblegame=" + mazoDobblegame.ToString() +
+                ", numPlayers=" + numPlayers.ToString() +
+                ", modalidad='" + modalidad.ToString() + '\'' +
+                ", ListPlayers=" + ListPlayers.ToString() +
+                '}';
+        }
     }
 }

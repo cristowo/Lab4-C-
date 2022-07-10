@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace model
 {
-    public class Player
+    public class Player:Interface_Players
     {
     // Atributos
     private string name;

@@ -45,7 +45,7 @@ namespace view
                     name = tablero.whoseTurnIs().ToString();
                     tablero.play(num, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
 
-                    if (2 < tablero.getMazoDobblegame().getMazo().Count())
+                    if (1 < tablero.getMazoDobblegame().getMazo().Count())
                     {
                         Window window = new gameTablero(tablero);
                         window.Show();

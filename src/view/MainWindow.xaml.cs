@@ -36,15 +36,18 @@ namespace view
             this.Close();
         }
 
-        private void Config_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Salir_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
+        private void CPU_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new datosdemo();
+            window.Show();
+            this.Close();
+        }
+
 
         //----------------------------------------------------------------------------
     }

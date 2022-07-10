@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="resultado" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Image HorizontalAlignment="Center" Height="518" VerticalAlignment="Center" Width="876" Source="/Images/backgrounall.png"/>
         <Image HorizontalAlignment="Center" Height="217" VerticalAlignment="Center" Width="578" Source="/Images/final.png"/>
         <Image HorizontalAlignment="Left" Height="66" Margin="415,343,0,0" VerticalAlignment="Top" Width="158" Source="/Images/BoCont.png"/>
         <Image HorizontalAlignment="Left" Height="68" Margin="227,344,0,0" VerticalAlignment="Top" Width="158" Source="/Images/BoChao.png"/>
         <TextBox x:Name="resultado1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="516" FontSize="20" Height="100" Margin="0,147,0,0" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="OCR A Extended"/>
         <Button x:Name="yes" Content="Si" HorizontalAlignment="Left" Margin="423,350,0,0" VerticalAlignment="Top" FontSize="20" Width="142" Click="yes_Click" FontFamily="OCR A Extended" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="41"/>
         <Button x:Name="no" Content="No" HorizontalAlignment="Left" Margin="237,350,0,0" VerticalAlignment="Top" FontSize="20" Width="138" Click="no_Click" Background="{x:Null}" Foreground="White" FontFamily="OCR A Extended" BorderBrush="{x:Null}" Height="41"/>
-        <Label Content="¿Desea volver a jugar?" HorizontalAlignment="Center" Margin="0,259,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="OCR A Extended"/>
+        <Label Content="¿Desea volver a sala?" HorizontalAlignment="Center" Margin="0,259,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="OCR A Extended"/>
     </Grid>
 </Window>

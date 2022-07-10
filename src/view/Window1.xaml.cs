@@ -59,5 +59,12 @@ namespace view
                 MessageBox.Show("Formato incorrecto, por favor solo usar números");
             }
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new MainWindow();
+            window.Show();
+            this.Close();
+        }
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace model
 {
-public class Card{
+public class Card:Interface_Card
+    {
     // Atributos
     private List<int> carta;
 

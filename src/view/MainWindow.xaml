@@ -12,11 +12,13 @@
             <RowDefinition Height="431*"/>
         </Grid.RowDefinitions>
         <Image Margin="-80,-41,-80,-41" Source="images/back.jpg" Grid.RowSpan="2" Opacity="0.9"/>
-        <Image HorizontalAlignment="Center" Height="66" Margin="0,255,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Source="/Images/BoCont.png"/>
+        <Image HorizontalAlignment="Center" Height="66" Margin="0,199,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Source="/Images/BoCont.png"/>
         <Image HorizontalAlignment="Center" Height="68" Margin="0,321,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Source="/Images/BoChao.png"/>
-        <Button x:Name="Iniciar_Juego" Content="Iniciar" HorizontalAlignment="Center" Margin="0,264,0,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="20" Width="138" FontFamily="OCR A Extended" Click="Iniciar_Juego_Click" Height="38" Foreground="White"/>
+        <Button x:Name="Iniciar_Juego" Content="PVP" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="20" Width="138" FontFamily="OCR A Extended" Click="Iniciar_Juego_Click" Height="38" Foreground="White" Margin="0,208,0,0"/>
         <Button x:Name="Salir" Content="Salir" HorizontalAlignment="Center" Margin="0,329,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Background="{x:Null}" Width="138" FontFamily="OCR A Extended" Foreground="White" BorderBrush="{x:Null}" Click="Salir_Click" FontWeight="Normal" Height="36"/>
         <Image HorizontalAlignment="Center" Height="78" Margin="0,47,0,0" Grid.Row="1" VerticalAlignment="Top" Width="398" Source="images/titulo.png"/>
+        <Image HorizontalAlignment="Center" Height="122" Margin="0,260,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Source="/Images/BoBot.png"/>
+        <Button x:Name="CPU" Content="DEMO" HorizontalAlignment="Center" Margin="0,269,0,0" Grid.Row="1" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" FontFamily="OCR A Extended" FontSize="20" Width="143" Height="38" Click="CPU_Click"/>
 
 
     </Grid>

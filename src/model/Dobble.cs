@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace model
 {
-    public class Dobble
+    public class Dobble:Interface_Dobble
     {
         private int Largo; //NumE
         private int NumC;

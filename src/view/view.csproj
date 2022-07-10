@@ -9,7 +9,10 @@
 
   <ItemGroup>
     <None Remove="abajo.png" />
-    <None Remove="BoChao.png" />
+    <None Remove="backgrounall.png" />
+    <None Remove="batdemo.png" />
+    <None Remove="batte.png" />
+    <None Remove="BoBot.png" />
     <None Remove="BoCont.png" />
     <None Remove="c1.png" />
     <None Remove="c2.png" />
@@ -25,6 +28,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\batdemo.png" />
+    <Resource Include="Images\batte.png" />
+    <Resource Include="Images\BoBot.png" />
+    <Resource Include="Images\backgrounall.png" />
     <Resource Include="Images\final.png" />
     <Resource Include="Images\BoChao.png" />
     <Resource Include="Images\BoCont.png" />

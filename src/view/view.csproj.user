@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="datosdemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="gameTablero.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="playdemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Register.xaml.cs">
@@ -21,10 +27,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="datosdemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="gameTablero.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="playdemo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Register.xaml">
