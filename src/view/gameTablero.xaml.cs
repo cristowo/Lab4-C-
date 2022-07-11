@@ -41,6 +41,14 @@ namespace view
                 num = int.Parse(element.Text);
                 if(num >= 1)
                 {
+                    if (tablero.getMazoDobblegame().getMazo()[0].EleComun(tablero.getMazoDobblegame().getMazo()[1])[0] == num)
+                    {
+                        MessageBox.Show("+1 punto :)");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Fallaste :c");
+                    }
                     string name;
                     name = tablero.whoseTurnIs().ToString();
                     tablero.play(num, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
@@ -53,6 +61,7 @@ namespace view
                     }
                     else
                     {
+                        MessageBox.Show("Juego Terminado, toca para continuar");
                         tablero.setEstado("Finalizado");
                         Window window = new resultado(tablero);
                         window.Show();
@@ -73,6 +82,7 @@ namespace view
 
         private void pass_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Turno pasado");
             string name;
             name = tablero.whoseTurnIs().ToString();
             tablero.play(0, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
@@ -83,6 +93,7 @@ namespace view
 
         private void Finish_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Juego Terminado, toca para continuar");
             tablero.setEstado("Finalizado");
             Window window = new resultado(tablero);
             window.Show();

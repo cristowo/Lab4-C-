@@ -109,7 +109,7 @@ namespace view {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/view;V1.0.0.0;component/playdemo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/view;component/playdemo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\playdemo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

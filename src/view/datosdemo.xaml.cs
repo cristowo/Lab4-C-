@@ -43,7 +43,7 @@ namespace view
                 }
                 else
                 {
-                    MessageBox.Show("Recuerde que solo se admiten mazos validos. Ej: 3, 4");
+                    MessageBox.Show("Recuerde que solo se admiten mazos validos. Ej: 3, 4, 6, 8");
                 }
             }
             catch (Exception)

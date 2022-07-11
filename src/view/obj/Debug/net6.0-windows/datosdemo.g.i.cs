@@ -77,7 +77,7 @@ namespace view {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/view;V1.0.0.0;component/datosdemo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/view;component/datosdemo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\datosdemo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

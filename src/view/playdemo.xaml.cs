@@ -48,7 +48,15 @@ namespace view
             {
                 num = tablero.getMazoDobblegame().getMazo()[0].getCarta()[0];
             }
-                tablero.play(num, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
+            if (tablero.getMazoDobblegame().getMazo()[0].EleComun(tablero.getMazoDobblegame().getMazo()[1])[0] == num)
+            {
+                MessageBox.Show("El CPU ha acertado!!!");
+            }
+            else
+            {
+                MessageBox.Show("El CPU ha fallado:c");
+            }
+            tablero.play(num, tablero.getMazoDobblegame(), tablero.getPosicionForName(name));
 
             if (1 < tablero.getMazoDobblegame().getMazo().Count())
             {
@@ -58,6 +66,7 @@ namespace view
             }
             else
             {
+                MessageBox.Show("Demostración Terminada");
                 tablero.setEstado("Finalizado");
                 Window window = new resultado(tablero);
                 window.Show();
@@ -67,6 +76,7 @@ namespace view
 
         private void Finish_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Demostración Terminada");
             tablero.setEstado("Finalizado");
             Window window = new resultado(tablero);
             window.Show();

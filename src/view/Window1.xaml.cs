@@ -51,7 +51,7 @@ namespace view
                 }
                 else
                 {
-                    MessageBox.Show("Recuerde que solo se admiten mazos validos y un minimo de 2 jugadores");
+                    MessageBox.Show("Recuerde que solo se admiten mazos validos (3, 4, 6, 8, etc.) y un minimo de 2 jugadores");
                 }
             }
             catch(Exception)

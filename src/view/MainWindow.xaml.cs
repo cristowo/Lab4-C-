@@ -43,6 +43,7 @@ namespace view
 
         private void CPU_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("En este modo podras observar el transcurso del juego, mientras 2 CPU juegan con una probabilidad de acierto del 66%");
             Window window = new datosdemo();
             window.Show();
             this.Close();

@@ -30,6 +30,7 @@ namespace view
 
         private void no_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Gracias por jugar!!");
             this.Close();
         }
 

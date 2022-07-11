@@ -1,0 +1,12 @@
+Cristobal Marchant 	20.814.010-8
+
+Requerimientos Funcionales			Calificación
+Clases y estructuras que forman el programa	1
+Menu interactivo				1
+Constructor de juegos				1
+Register					1
+Play						1
+ToString					1
+Equal(Object o)					1
+User vs User					1
+CPU vs CPU					1

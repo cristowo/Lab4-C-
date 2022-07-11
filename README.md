@@ -9,12 +9,18 @@ Espacio de trabajo para la realizacion del laboratorio 4 de paradigmas de progra
 
 A continuación los objetivos a realizar y su estado hasta el momento
 
-### Card                            |PENDIENTE
- 
-### Dobble                          |PENDIENTE
+### Card                            |LISTO
+#### interface                      |LISTO
 
-### DobbleGame                      |PENDIENTE
+### Dobble                          |LISTO
+#### interface                      |LISTO
 
-### Player                          |PENDIENTE
+### DobbleGame                      |LISTO
+#### interface                      |LISTO
 
-### Interfas Grafica                |PENDIENTE
+### Player                          |LISTO
+#### interface                      |LISTO
+
+### Interfas Grafica                |LISTO
+#### PVP                            |LISTO
+#### CpuVCpu                        |LISTO
